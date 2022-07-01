@@ -5,6 +5,8 @@ const btnSlideLeft = document.querySelector(".slider_btn-left");
 const slides = document.querySelectorAll(".slide");
 const dotTraverse = document.querySelector(".dots");
 const dots = document.querySelectorAll(".dots_dot");
+const contactUs = document.querySelector(".contact-us");
+const closeModal = document.querySelector(".closeModal");
 let j = 0;
 
 dots[0].classList.add("dots_dot-active");
@@ -42,3 +44,17 @@ dotTraverse.addEventListener("click", (e) => {
 	dots.forEach((dot) => dot.classList.remove("dots_dot-active"));
 	dots[j].classList.add("dots_dot-active");
 });
+
+contactUs.addEventListener("click", (e) => {
+	document.querySelector(".modal").classList.remove("hidden");
+	document.querySelector(".overlay").classList.remove("hidden");
+});
+
+closeModal.addEventListener("click", (e) => {
+	document.querySelector(".modal").classList.add("hidden");
+	document.querySelector(".overlay").classList.add("hidden");
+});
+
+document
+	.querySelector(".submit")
+	.addEventListener("click", (e) => e.preventDefault());

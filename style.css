@@ -177,3 +177,87 @@ ul a{
   background-color:rgba(0, 0, 0, 0.7);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Modal */
+
+.modal{
+  max-width: 600px;
+  min-width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #c4c4c4;
+  background-color: #f3f3f3;
+  padding: 10px 40px;
+}
+
+.modal, .modal *{
+  z-index: 100;
+}
+
+.modal h2{
+  padding: 10px 0 30px;
+  color:limegreen;
+  text-align: center;
+}
+
+.modal p{
+  float: right;
+  cursor: pointer;
+}
+.modal form{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.modal input{
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.modal input:focus{
+  border-color:  rgba(0, 0, 0, 0.1);
+  /* border: none; */
+  outline: 2px solid rgba(0, 0, 0, 0.1);
+  /* outline: 1px solid limegreen; */
+}
+
+.submit{
+  grid-column: 1 / span 2;
+  justify-self: center;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  /* margin-top: 1rem; */
+}
+
+.overlay{
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+
+.closeModal{
+  font-size: 2.5rem;
+}
+
+/* Utility */ 
+
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.claer {
+  clear: both;
+}
