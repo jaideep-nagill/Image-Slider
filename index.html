@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Image Slider</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="image">
+      <img src="images/logo.jfif" alt="logo">
+    </div>
+    <ul class="nav_links">
+      <div class="abc">
+        <li class="nav_link"><a href="#" class="home">Home</a></li>
+        <li class="nav_link"><a href="#" class="about-us">About us</a></li>
+        <li class="nav_link"><a href="#" class="join-us">Join us</a></li>
+        <li class="nav_link"><a href="#" class="contact-us">Contact us</a></li>
+      </div>
+    </ul>
+  </div>
+
+  <header>
+    <div class="message">
+      <h1 class="heading">Lorem Text</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed dolorem obcaecati inventore quaerat aut aliquid
+        minima iste neque laborum in. Aliquam, voluptas asperiores, laboriosam ullam doloremque consequatur culpa qui
+        fugiat maxime velit quam optio suscipit dolores fuga nulla totam autem corrupti soluta veritatis, exercitationem
+        dolor facilis? Cupiditate harum expedita mollitia.</p>
+    </div>
+    <div class="slider">
+      <div class="slide">
+        <img class="photo photo-1" data-index="1" src="images/photo-1.png" alt="photo-1">
+      </div>
+      <div class="slide">
+        <img src="images/photo-2.png" alt="photo-2" class="photo photo-2" data-index="2">
+      </div>
+      <div class="slide">
+        <img src="images/photo-3.png" alt="photo-3" class="photo photo-3" data-index="3">
+      </div>
+      <div class="slide">
+        <img src="images/photo-4.png" alt="photo-4" class="photo photo-4" data-index="4">
+      </div>
+      <div class="dots">
+        <p class="dots_dot" data-slide="1"></p>
+        <p class="dots_dot" data-slide="2"></p>
+        <p class="dots_dot" data-slide="3"></p>
+        <p class="dots_dot" data-slide="4"></p>
+      </div>
+      <div>
+        <button class="slider_btn slider_btn-left">&larr;</button>
+      </div>
+      <div>
+        <button class="slider_btn slider_btn-right">&rarr;</button>
+      </div>
+    </div>
+  </header>
+  <script src="script.js"></script>
+</body>
+
+</html>
